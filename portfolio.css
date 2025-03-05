@@ -1,0 +1,391 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+header {
+  width: 100%;
+  height: 3em;
+  background: rgb(100,100,100);
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  font-family: Georgia;
+  position: fixed;
+  z-index: 2;
+  box-shadow: 0 2px 5px 0 rgb(0,0,0,.5);
+}
+
+#homebar {
+  margin-left: 1.5em;
+}
+
+
+#name a{
+  color: rgb(230,230,230);
+  font-size: 2rem;
+  transition: .2s;
+}
+
+#name a:hover{
+  color: rgb(255,150,150);
+  transition: .2s;
+}
+
+#navbar {
+  margin-top: .1em;
+  margin-right: 1.5em;
+  margin-left: auto;
+}
+
+#menu {
+  display: flex;
+  list-style: none;
+}
+
+.nav-link {
+  text-decoration: none;
+  margin-left: 1.5em;
+  color: rgb(230,230,230);
+  font-size: 1.5rem;
+  transition: .2s;
+}
+
+.work:hover {
+  color: rgb(150,150,255);
+  transition: .2s;
+}
+
+.contact-me:hover {
+  color: rgb(100,170,240);
+  transition: .2s;
+}
+
+#welcome-section {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: rgb(70,70,70);
+  background: rgb(240,240,240);
+  font-family: sans-serif;
+}
+
+#hello {
+  margin-top: -1em;
+  margin-left: 1em;
+}
+
+h1 {
+  font-size: 4rem;
+  margin-top: 1rem;
+}
+
+h2{
+  margin-top: .5em;
+  font-size: 2.1rem;
+  opacity: 85%;
+}
+
+#work{
+  background: rgb(240,240,240);
+  padding-bottom: 2em;
+}
+
+#projects {
+  width: 100%;
+  background: rgb(70,70,70);
+  color: rgb(210,210,210);
+  align-items: center;
+  justify-items: center;
+  padding-top: 3em;
+  padding-bottom: 3em;
+  font-family: sans-serif;
+  box-shadow: 0px 0px 15px 0 rgb(100,100,100,1);
+  z-index: 1; 
+  position: relative;
+}
+
+h3 {
+  width: 16em;
+  display: flex;
+  justify-content: center;
+  justify-self: center;
+  font-size: 2.5rem;
+  padding-bottom: .5em;
+  border-bottom: 2px solid rgb(100,100,100);
+  transition: .5s;
+}
+
+#projects:hover #project-header{
+  border-bottom: 2px solid rgb(150,50,255,.7);
+  color: rgb(245,245,245);
+  width: 19em;
+  transition: 5s;
+}
+
+h4 {
+  font-size: 2rem;
+  margin-top: .5em;
+}
+
+.project-tile {
+  height: 24em;
+  width: 28em;
+  display: grid;
+  margin: 2em;
+  justify-items: center;
+  border-radius: 6px;
+  border: 6px solid rgb(50,50,50);
+  box-shadow: 0 0px 5px 0 rgb(0,0,0,1);
+  overflow: hidden;
+  background: rgb(50,50,50);
+  transition: .5s;
+}
+
+.project-tile:hover #project-name{
+  text-shadow: 0 0 10px rgb(255,255,255,.8);
+  color: rgb(230,230,230);
+  transition: 1s;
+}
+
+.survey span {
+  opacity: 0%;
+  color: rgb(30,225,70);
+  transition: .5s;
+}
+
+.tribute span {
+  opacity: 0%;
+  color: rgb(150,50,255);
+  transition: .5s;
+}
+
+.technical span {
+  opacity: 0%;
+  color: rgb(255,60,60);
+  transition: .5s;
+}
+
+.product span {
+  opacity: 0%;
+  color: rgb(225,225,50);
+  transition: .5s;
+}
+
+.project-tile:hover span{
+  opacity: 100%;
+  transition: .8s;
+}
+
+.survey:hover {
+  box-shadow: 0 0px 15px 0 rgb(150,255,200,.8);
+  background: rgb(45,45,45);
+  border: 6px solid rgb(45,45,45);
+  transition: .8s;
+}
+
+.tribute:hover {
+  box-shadow: 0 0px 15px 0 rgb(200,150,255,.8);
+  background: rgb(45,45,45);
+  border: 6px solid rgb(45,45,45);
+  transition: .8s;
+}
+
+.technical:hover {
+  box-shadow: 0 0px 15px 0 rgb(255,170,170,.8);
+  background: rgb(45,45,45);
+  border: 6px solid rgb(45,45,45);
+  transition: .8s;
+}
+
+.product:hover {
+  box-shadow: 0 0px 15px 0 rgb(225,225,150,.8);
+  background: rgb(45,45,45);
+  border: 6px solid rgb(45,45,45);
+  transition: .8s;
+}
+
+.project-tile:hover #name-box {
+  background: rgb(45,45,45);
+  transition: .8s;
+}
+
+.screenshot {
+  width: 100%;
+  height: 80%;
+  filter: grayscale(15%) blur(0.5px);
+  opacity: 85%;
+  border-radius: 5px 5px 0 0;
+  transition: .5s;
+}
+
+.project-tile:hover .screenshot {
+  opacity: 100%;
+  filter: grayscale(0%);
+  transition: 1.2s;
+}
+
+#actual-projects {
+  display: grid;
+  grid-template-columns: auto auto;
+  margin-top: 2em;
+  justify-self: center; 
+}
+
+#project-name {
+  align-content: center;
+  color: rgb(215,215,215);
+  font-size: 1.8rem;
+  font-weight: bold;
+  transition: .5s;
+}
+
+#name-box {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  background: rgb(50,50,50);
+  font-family: Helvetica;
+  transition: .5s;
+}
+
+#contact {
+  height: 30vw;
+  width: 100%;
+  align-content: center;
+  justify-items: center;
+  color: rgb(70,70,70);
+  background: rgb(230,230,230);
+  position: absolute;
+}
+
+#join {
+  border: none;
+  font-family: sans-serif;
+  margin-bottom: -.5em;
+  margin-top: -1em;
+  justify-self: center;
+}
+
+h4 {
+  font-family: sans-serif;
+  margin-bottom: 2em;
+  justify-self: center;
+  opacity: 85%;
+}
+
+#socials {
+  margin-top: 3em;
+  justify-self: center;
+}
+
+.fab {
+  margin: 0 1em 0 1em;
+  font-size: 1.5rem;
+  color: rgb(100,100,100);
+  transition: .2s;
+}
+
+.fa-facebook-f:hover {
+  color: rgb(150,150,255);
+  transition: .2s;
+
+}
+
+.fa-instagram:hover {
+  color: rgb(255,150,150);
+  transition: .2s;
+}
+
+.fa-github:hover {
+  color: rgb(120,210,120);
+  transition: .2s;
+}
+
+.fa-free-code-camp:hover {
+  color: rgb(230,150,0);
+  transition: .2s;
+}
+
+@media only screen and (max-width: 1015px) {
+  #actual-projects {
+    display: block;
+  }
+
+  #projects {
+    padding-bottom: 1em;
+    padding-top: 2em;
+  }
+
+}
+
+@media only screen and (max-width: 825px) {
+  
+  
+
+  header {
+    font-size: 1rem;
+  }
+
+  #navbar {
+    margin-right: .5em;
+  }
+
+  #name a{
+    font-size: 1.8rem;
+  }
+
+  .nav-link {
+    margin-left: 1em;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 1.55rem;
+  }
+
+  h3 {
+    width: 16em;
+    font-size: 1.7rem;
+  }
+
+  #join {
+    margin-top: .5em;
+    font-size: 2.2rem;
+    margin-bottom: -.5em;
+  }
+
+  h4 {
+    font-size: 1.6rem;
+    margin-bottom: 0;
+  }
+
+  #socials {
+    display: grid;
+    grid-template-columns: 180px 240px;
+    row-gap: 1em;
+    column-gap: 0;
+    margin-left: 4em;
+  }
+
+  .fab {
+    margin: 0 .3em 0 .3em;
+  }
+
+  #contact {
+    height: 50vh;
+  }
+
+  #homebar {
+    margin-left: .5em;
+  }
+}
